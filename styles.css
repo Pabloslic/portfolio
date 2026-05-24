@@ -461,10 +461,11 @@ h3 {
 .project-showcase {
   display: grid;
   gap: var(--space-4);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .case-study {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   overflow: hidden;
 }
 
@@ -484,7 +485,7 @@ h3 {
 }
 
 .case-copy {
-  padding: var(--space-4);
+  padding: var(--space-3);
 }
 
 .case-meta {
@@ -500,7 +501,7 @@ h3 {
 }
 
 .case-media img {
-  height: 240px;
+  height: 260px;
 }
 
 .others-grid {
@@ -721,6 +722,7 @@ h3 {
   .studio-grid,
   .feature-stat,
   .case-study,
+  .project-showcase,
   .team-grid,
   .services-grid,
   .project-grid,
